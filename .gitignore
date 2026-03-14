@@ -1,0 +1,14 @@
+# Ignore all local user settings
+# Ignore all files in any directory named:
+xcuserdata/
+
+# Ignore all collection artifacts and derived data
+# Ignore all files in any directory named:
+build/
+DerivedData/
+# Ignore all files with these extensions:
+*.app
+*.ipa
+
+# Ignore all macOS system files
+.DS_Store
