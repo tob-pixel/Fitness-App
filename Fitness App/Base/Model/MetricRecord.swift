@@ -10,7 +10,8 @@ final class MetricRecord {
     var value: Double?
     
     // Specific data for strength training
-    @Relationship(deleteRule: .cascade, inverse: \ExerciseSet.record) var sets: [ExerciseSet]? // TODO: Extension: average weight, reps
+    // TODO: Extension: average weight, reps
+    @Relationship(deleteRule: .cascade, inverse: \ExerciseSet.record) var sets: [ExerciseSet]?
     
     init(timestamp: Date, value: Double? = nil, sets: [ExerciseSet]? = nil) {
         self.timestamp = timestamp

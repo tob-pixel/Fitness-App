@@ -1,0 +1,23 @@
+# Disabled rules
+disabled_rules:
+ - trailing_whitespace
+ - todo
+
+# Basic rules
+file_length:
+ warning: 400
+ error: 200 
+
+type_body_length:
+ warning: 250
+ error: 400
+
+identifier_name:
+ min_length: 2
+ max_length: 20
+
+# Excluded
+excluded:
+ - Pods
+ - Carthage
+ - DerivedData

@@ -45,11 +45,11 @@ final class SliderSelection {
     func thumbPosition(for scrollPosition: Date) -> Double {
         let sliderLowerBound = sliderRange.lowerBound
         
-        let secondsFromLowerBoundToScrollPosition = Double(
+        let secsToScrollPosition = Double(
             sliderLowerBound.secondsTo(date: scrollPosition)
         )
         let displayedSeconds = Double(period.seconds)
         
-        return secondsFromLowerBoundToScrollPosition / displayedSeconds
+        return secsToScrollPosition / displayedSeconds
     }
 }

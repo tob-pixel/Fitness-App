@@ -31,4 +31,3 @@ enum ChartPeriod: String, Identifiable, CaseIterable {
     var start: Date { .periodAgo(period: self).startOfDay }
     var end: Date { .now.startOfDay }
 }
-

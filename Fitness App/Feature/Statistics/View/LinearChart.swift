@@ -36,19 +36,19 @@ struct LinearChart: View {
     // MARK: - Body
     
     var body: some View {
-        Chart(data, id: \.timestamp) { d in
+        Chart(data, id: \.timestamp) { data in
             // Gradient below the data line
             AreaMark(
-                x: .value("Day", d.timestamp.startOfDay),
-                y: .value("Value", d.value ?? 0)
+                x: .value("Day", data.timestamp.startOfDay),
+                y: .value("Value", data.value ?? 0)
             )
             .interpolationMethod(.catmullRom)
             .foregroundStyle(LinearChart.Appearance.gradient)
             
             // Data line
             LineMark(
-                x: .value("Day", d.timestamp.startOfDay),
-                y: .value("Value", d.value ?? 0)
+                x: .value("Day", data.timestamp.startOfDay),
+                y: .value("Value", data.value ?? 0)
             )
             .interpolationMethod(.catmullRom)
             .symbol { ChartSymbol(visibleDomain: visibleDomain) }
@@ -63,5 +63,14 @@ struct LinearChart: View {
 }
 
 #Preview {
-//    LinearChart(data: [MetricRecord(timestamp: Date.now, value: 0)], period: .week, visibleDomain: 2)
+    @Previewable @State var scrollPosition: Date = .now
+    let data = [MetricRecord(timestamp: Date.now, value: 70),
+                MetricRecord(timestamp: Date.daysAgo(days: 1), value: 60),
+                MetricRecord(timestamp: Date.daysAgo(days: 2), value: 50),
+                MetricRecord(timestamp: Date.daysAgo(days: 3), value: 40),
+                MetricRecord(timestamp: Date.daysAgo(days: 4), value: 30),
+                MetricRecord(timestamp: Date.daysAgo(days: 5), value: 20),
+                MetricRecord(timestamp: Date.daysAgo(days: 6), value: 10)
+            ]
+    LinearChart(data: data, period: .week, visibleDomain: 223113, scrollPosition: $scrollPosition)
 }
