@@ -49,7 +49,9 @@ struct Statistics: View {
     func statistics(vm: StatisticsViewModel) -> some View {
         VStack {
             periodPicker(for: vm)
-            ChartRangeSlider(lowerThumbPosoition: vm.sliderSelection.lowerThumbPosition, upperThumbPosoition: vm.sliderSelection.upperThumbPosition)
+            ChartRangeSlider(lowerThumbPosoition: vm.sliderSelection.lowerThumbPosition,
+                             upperThumbPosoition: vm.sliderSelection.upperThumbPosition
+            )
         }
     }
     

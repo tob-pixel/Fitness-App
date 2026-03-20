@@ -5,7 +5,6 @@
 //  Created by visortix on 05.03.2026.
 //
 
-
 // MARK: - Adding records
 extension StatisticsViewModel {
     

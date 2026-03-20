@@ -15,6 +15,15 @@ The application uses SwiftUI for the user interface and SwiftData for data stora
 iOS Deployment Target: iOS 26.1
 Swift 6.2.1
 
+## Git hooks 
+Githooks automatically run pre-commit swiftlint.
+
+## Integration with the assembly process
+Integration with the assembly process is an integration during project assembly.
+
+## Static classification
+Static type checking - a core feature of Swift.
+
 ## Copyright License
 MIT License
 

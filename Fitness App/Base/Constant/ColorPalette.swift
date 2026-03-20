@@ -10,4 +10,3 @@ import SwiftUI
 struct ColorPalette {
     static let training = Color("FFAB0F")
 }
-

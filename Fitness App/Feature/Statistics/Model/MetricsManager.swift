@@ -57,9 +57,6 @@ struct MetricsManager {
     
     // MARK: - Update
     
-    
-    
     // MARK: - Remove
-    
     
 }

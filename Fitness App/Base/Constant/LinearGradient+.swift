@@ -8,5 +8,8 @@
 import SwiftUI
 
 extension LinearGradient {
-    static let helperMain = LinearGradient(colors: [Color("00FFD9"), Color("FFD5AD")], startPoint: .top, endPoint: .bottom)
+    static let helperMain = LinearGradient(colors: [Color("00FFD9"), Color("FFD5AD")],
+                                           startPoint: .top,
+                                           endPoint: .bottom
+                                        )
 }

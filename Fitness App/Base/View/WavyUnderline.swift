@@ -44,4 +44,3 @@ struct WavyUnderline: View {
     Rectangle().frame(width: 20, height: 20)
         .background { WavyUnderline(color: .black) }
 }
-

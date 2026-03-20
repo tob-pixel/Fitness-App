@@ -10,7 +10,6 @@ import SwiftUI
 @Observable class CalendarViewModel {
     
     var calendar = WeekCalendar.init()
-
     
     func update() {
         
@@ -47,5 +46,3 @@ extension CalendarViewModel {
         set { calendar.trainingDays = newValue }
     }
 }
-
-
