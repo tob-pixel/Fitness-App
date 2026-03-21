@@ -24,6 +24,19 @@ Integration with the assembly process is an integration during project assembly.
 ## Static classification
 Static type checking - a core feature of Swift.
 
+## How to write the documentation
+Documentation comments are written using the format where each line is preceded by a triple slash ///.
+Write `Parameters` and `Returns`.
+
+### Example:
+```swift
+// MARK: - Functions
+/// Updates the whole chart display state.
+///
+/// - Parameters:
+///   - period: An instance of chart period.
+```
+
 ## Copyright License
 MIT License
 

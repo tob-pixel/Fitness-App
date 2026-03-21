@@ -22,7 +22,13 @@ struct MetricsManager {
     
     // MARK: - Add
     
-    /// Add record without timestamp
+    /// Add record without timestamp.
+    ///
+    /// - Parameters:
+    ///   - category: category of a record.
+    ///   - type: type of a record.
+    ///   - value: value for a record.
+    ///   - exerciseSets: sets for the record.
     func addRecord(
         category: Category,
         type: String,
@@ -32,7 +38,14 @@ struct MetricsManager {
         addRecord(timestamp: Date(), category: category, type: type, value: value, exerciseSets: exerciseSets)
     }
     
-    /// Main add record function
+    /// Main add record function.
+    ///
+    /// - Parameters:
+    ///   - timestamp: timestamp of a record.
+    ///   - category: category of a record.
+    ///   - type: type of a record.
+    ///   - value: value for a record.
+    ///   - exerciseSets: sets for the record.
     func addRecord(
         timestamp: Date,
         category: Category,

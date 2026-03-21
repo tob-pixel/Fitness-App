@@ -34,7 +34,10 @@ final class ChartDisplayState {
     }
 
     // MARK: - Functions
-    /// Updates the whole chart display state
+    /// Updates the whole chart display state.
+    ///
+    /// - Parameters:
+    ///   - period: An instance of chart period.
     func update(period: ChartPeriod) {
         self.period = period
         let visibleDays = period.days
