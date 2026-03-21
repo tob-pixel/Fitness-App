@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// Enum that represents a day of the week view.
 struct WeekDayView: View {
     
     let day: DayOfWeek

@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// Enum that represents a helper text block `View` that displays the text in the array.
 struct HelperTextBlock: View {
     
     @State private var vm = HelperViewModel.init()

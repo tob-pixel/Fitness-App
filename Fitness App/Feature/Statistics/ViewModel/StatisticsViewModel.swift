@@ -8,6 +8,8 @@
 import Foundation
 import SwiftData
 
+/// Class represents a view model for statistics.
+/// It works with database.
 @Observable final class StatisticsViewModel {
     
     private var modelContext: ModelContext
@@ -20,9 +22,9 @@ import SwiftData
     var sliderSelection: SliderSelection
     
     // MARK: Metrics
-    var metricsProvider: MetricsProvider?
-    var metricsManager: MetricsManager?
-    var metricsSchemaManager: MetricsSchemaManager?
+    var metricsProvider: MetricProvider?
+    var metricsManager: MetricManager?
+    var metricsSchemaManager: MetricSchemaManager?
 
     /// Fetched metric records by MetricIdentifiers
     var recordsByMetric: [MetricIdentifier: [MetricRecord]] = [:]
@@ -53,6 +55,7 @@ import SwiftData
 
 // MARK: - State update
 extension StatisticsViewModel {
+    /// Function that updates the chart display state.
     private func updateChartState() {
         chartDisplayState.update(period: selectedPeriod)
     }
@@ -61,12 +64,17 @@ extension StatisticsViewModel {
 // MARK: - Metrics-related functions
 extension StatisticsViewModel {
     
+    /// Function that makes the setup for the instance.
+    /// It inits metrics, managers and reloads the data.
+    ///
+    /// - Parameters:
+    ///   - metrics: Metrics to fetch in the future.
     func setup(_ metrics: [MetricIdentifier]) {
         self.activeMetrics = metrics
         
-        self.metricsProvider = MetricsProvider(modelContext: modelContext)
-        self.metricsManager = MetricsManager(modelContext: modelContext, vm: self)
-        self.metricsSchemaManager = MetricsSchemaManager(modelContext: modelContext, vm: self)
+        self.metricsProvider = MetricProvider(modelContext: modelContext)
+        self.metricsManager = MetricManager(modelContext: modelContext, vm: self)
+        self.metricsSchemaManager = MetricSchemaManager(modelContext: modelContext, vm: self)
         
         reloadData()
     }

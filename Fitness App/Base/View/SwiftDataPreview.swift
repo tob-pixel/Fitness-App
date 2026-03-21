@@ -8,7 +8,14 @@
 import SwiftUI
 import SwiftData
 
+/// Structure that contains the functions:
+/// - makeSharedContext that returns a shared context.
+/// - body that returns body some view based on the content and the context.
 struct SwiftDataPreview: PreviewModifier {
+    
+    /// Returns a shared context
+    ///
+    /// - Returns: The model container.
     static func makeSharedContext() async throws -> ModelContainer {
         let container = try ModelContainer(
             for: MetricCategory.self,
@@ -18,6 +25,12 @@ struct SwiftDataPreview: PreviewModifier {
         return container
     }
     
+    /// Returns body some view based on the content and the context.
+    ///
+    /// - Parameters:
+    ///   - content:The content of the data preview.
+    ///   - context:The context of the data preview.
+    /// - Returns: Some View.
     func body(content: Content, context: ModelContainer) -> some View {
         content.modelContainer(context)
     }

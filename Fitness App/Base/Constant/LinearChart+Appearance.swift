@@ -8,6 +8,7 @@
 import SwiftUI
 
 extension LinearChart {
+    /// Structure for Appearance constants.
     struct Appearance {
         static let color = Color("C6C6C6")
         static let gradient = LinearGradient(colors: [color, .clear], startPoint: .top, endPoint: .bottom)

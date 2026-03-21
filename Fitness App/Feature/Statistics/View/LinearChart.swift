@@ -8,6 +8,7 @@
 import SwiftUI
 import Charts
 
+/// Struct that represents a lenear chart view.
 struct LinearChart: View {
     
     // MARK: Data In

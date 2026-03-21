@@ -7,6 +7,7 @@
 
 import CoreGraphics
 
+/// Struct that represents a spacing constant container.
 struct Spacing {
     
     static let main: CGFloat = Gap.main

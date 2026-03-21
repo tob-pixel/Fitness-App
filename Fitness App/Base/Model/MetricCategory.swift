@@ -1,6 +1,7 @@
 import Foundation
 import SwiftData
 
+/// Class for metric categories data storage.
 @Model
 final class MetricCategory {
     @Attribute(.unique) var name: String

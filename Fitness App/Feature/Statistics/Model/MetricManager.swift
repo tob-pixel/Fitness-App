@@ -8,7 +8,8 @@
 import Foundation
 import SwiftData
 
-struct MetricsManager {
+/// Structure that represents a metric manager.
+struct MetricManager {
     
     private let modelContext: ModelContext
     private let vm: StatisticsViewModel

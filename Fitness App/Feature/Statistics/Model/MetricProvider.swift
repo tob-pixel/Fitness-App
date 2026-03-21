@@ -8,7 +8,8 @@
 import Foundation
 import SwiftData
 
-struct MetricsProvider {
+/// Struct that fetches metrics.
+struct MetricProvider {
     
     private let modelContext: ModelContext
     

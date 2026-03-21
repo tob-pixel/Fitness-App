@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// Struct that represents a week days view
 struct WeekDaysView: View {
     
     let days: [DayOfWeek]

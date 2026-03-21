@@ -8,6 +8,8 @@
 import SwiftUI
 import SwiftData
 
+/// Struct that represents statistics View.
+/// It displays a number of charts and a slider.
 struct Statistics: View {
     
     // MARK: Data In
@@ -46,6 +48,11 @@ struct Statistics: View {
         }
     }
     
+    /// Returns statistics view.
+    ///
+    /// - Parameters:
+    ///   - vm: Statistics view model
+    /// - Returns: Statistics some view.
     func statistics(vm: StatisticsViewModel) -> some View {
         VStack {
             periodPicker(for: vm)
@@ -56,7 +63,7 @@ struct Statistics: View {
     }
     
     // MARK: - Functions
-    
+    /// Inits a new view model with fetching the metrics.
     private func initViewModel() {
         guard vm == nil else { return }
         let newVM = StatisticsViewModel(modelContext: modelContext)
@@ -67,6 +74,11 @@ struct Statistics: View {
         vm = newVM
     }
     
+    /// Returns period picker view.
+    ///
+    /// - Parameters:
+    ///   - viewmodel: View model to change its period.
+    /// - Returns: Period picker view.
     private func periodPicker(for viewModel: StatisticsViewModel) -> some View {
         @Bindable var bindableVM = viewModel
         return Picker("Period", selection: $bindableVM.selectedPeriod) {

@@ -7,6 +7,7 @@
 
 import CoreGraphics
 
+/// Structure that represents a gap constant container.
 struct Gap {
     static let main: CGFloat = 16
 }

@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// Structure for the ColorPalette
 struct ColorPalette {
     static let training = Color("FFAB0F")
 }

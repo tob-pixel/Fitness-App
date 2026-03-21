@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// Struct that represents a symbor for the chart line.
 struct ChartSymbol: View {
     // MARK: Data In
     /// Actual visible domain

@@ -8,6 +8,7 @@
 import Foundation
 import Observation
 
+/// Class that represents a chart display state.
 @Observable
 final class ChartDisplayState {
     

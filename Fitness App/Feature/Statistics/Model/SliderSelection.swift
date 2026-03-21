@@ -9,6 +9,7 @@ import Foundation
 import Observation
 import SwiftUI
 
+/// Class that represents a slider selection that provides data for the `ChartRangeSlider.`
 @Observable
 final class SliderSelection {
     

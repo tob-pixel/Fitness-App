@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+
+/// Structure that represents a long wave.
 struct WaveView: View {
     
     let pixelsPerWave: Int
@@ -31,6 +33,11 @@ struct WaveView: View {
         }
     }
     
+    /// Returns waves `some View` representation based on the count value.
+    ///
+    /// - Parameters:
+    ///   - count: The count of the waves.
+    /// - Returns: Some View.
     func waves(_ count: Int) -> some View {
         HStack(spacing: 0) {
             ForEach(0..<count, id: \.self) { _ in

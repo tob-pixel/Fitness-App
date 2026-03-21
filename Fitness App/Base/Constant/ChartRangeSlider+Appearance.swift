@@ -8,6 +8,7 @@
 import SwiftUI
 
 extension ChartRangeSlider {
+    /// Structure for Appearance constants.
     struct Appearance {
         static let backgroundColor = Color("EDEDED")
         

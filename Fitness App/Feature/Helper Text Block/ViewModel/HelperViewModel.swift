@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Class that represents a view moder for the helper `View`.
 @Observable class HelperViewModel {
     private(set) var summary: String = ""
     private(set) var tip: String = ""

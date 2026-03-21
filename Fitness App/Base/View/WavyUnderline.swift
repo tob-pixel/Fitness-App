@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// Structure that represents an underline wave.
 struct WavyUnderline: View {
     
     let color: Color
@@ -36,7 +37,6 @@ struct WavyUnderline: View {
                 .rotationEffect(Angle(degrees: 180))
                 .offset(y: height * WavyUnderline.offsetFactor)
         }
-        
     }
 }
 

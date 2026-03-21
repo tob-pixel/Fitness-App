@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// Struct that represents a calendar view.
 struct CalendarView: View {
     
     @State private var vm = CalendarViewModel.init()

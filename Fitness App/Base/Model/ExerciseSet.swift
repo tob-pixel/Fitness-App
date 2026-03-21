@@ -1,6 +1,7 @@
 import Foundation
 import SwiftData
 
+/// Class for exercise sets data.
 @Model
 final class ExerciseSet {
     var setIndex: Int

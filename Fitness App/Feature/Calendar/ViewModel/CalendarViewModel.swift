@@ -7,10 +7,12 @@
 
 import SwiftUI
 
+/// Class that represents a calendar view model.
 @Observable class CalendarViewModel {
     
     var calendar = WeekCalendar.init()
     
+    /// Function that sets the current day first in the array.
     func update() {
         
         let currentDay = Date.now.dayOfWeek
@@ -23,6 +25,7 @@ import SwiftUI
         }
     }
     
+    /// Function that returns whether it is a first calendar day.
     func isFirstCalendarDay(day: String) -> Bool {
         
         let firstCalendarDay = daysOfWeek.first?.rawValue

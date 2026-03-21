@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Enum that represents a chart period.
 enum ChartPeriod: String, Identifiable, CaseIterable {
     
     // MARK: Id

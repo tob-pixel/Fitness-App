@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// Struct that represents padding constant container.
 struct Padding {
     
     static let main: CGFloat = Gap.main

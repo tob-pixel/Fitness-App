@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// Struct that represents a range slider view.
 struct ChartRangeSlider: View {
     
     // MARK: Data In

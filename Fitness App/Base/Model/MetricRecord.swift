@@ -1,6 +1,7 @@
 import Foundation
 import SwiftData
 
+/// Class for metric records data storage.
 @Model
 final class MetricRecord {
     var timestamp: Date

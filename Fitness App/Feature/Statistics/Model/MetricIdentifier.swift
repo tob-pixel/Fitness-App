@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Enum that represents a Metric Identifier.
 enum MetricIdentifier: Hashable {
     
     // MARK: Metric group type cases

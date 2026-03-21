@@ -1,6 +1,7 @@
 import Foundation
 import SwiftData
 
+/// Class for metric types data storage.
 @Model
 final class MetricType {
     @Attribute(.unique) var name: String

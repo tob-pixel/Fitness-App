@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// Structure to represent waves.
 struct Wave: Shape {
     
     func path(in rect: CGRect) -> Path {
